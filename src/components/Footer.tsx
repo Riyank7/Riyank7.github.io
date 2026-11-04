@@ -1,6 +1,7 @@
 'use client'
 
 import resumeData from '@/data/resume.json'
+import Link from 'next/link'
 import Icon from './Icon'
 import { useTheme } from './ThemeProvider'
 
@@ -123,7 +124,7 @@ export default function Footer() {
             © {currentYear} {resumeData.name}.
           </p>
           <p className="text-sm text-[var(--text-tertiary)]">
-            Designed & Developed with care ✨
+            <Link href="/privacy/" className="underline hover:text-accent">Privacy notice</Link>
           </p>
         </div>
       </div>

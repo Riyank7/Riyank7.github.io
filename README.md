@@ -75,8 +75,8 @@ A modern, high-performance portfolio website featuring Apple-style scroll animat
 
 ```bash
 # Clone the repository
-git clone https://github.com/rmukhop3/rmukhop3.github.io.git
-cd rmukhop3.github.io/sweet-mendel
+git clone https://github.com/Riyank7/Riyank7.github.io.git
+cd Riyank7.github.io
 
 # Install dependencies
 npm install
@@ -89,6 +89,18 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## Analytics through Google Tag Manager
+
+The live portfolio is https://riyank7.github.io and its web container is `GTM-58F4DV37` in the personal Google account.
+
+The GitHub Actions repository variable `NEXT_PUBLIC_GTM_ID` supplies the container ID at build time. For local testing, copy `.env.example` to `.env.local` and set that value. Rebuild after changing it. GA4 is configured as a Google tag inside GTM; do not add a second direct Analytics snippet.
+
+The privacy banner blocks GTM until visitors opt in. “Analytics only” grants analytics storage while denying advertising storage, advertising user data and ad personalization. “Allow analytics and demographics” grants those additional permissions for Google Signals. “Reject optional” keeps Google tags blocked. Choices expire after 180 days and can be changed using Privacy settings. There is no unconditional noscript iframe because it would bypass this consent gate. The privacy notice is at `/privacy/`.
+
+For age, gender and interests, enable Google Signals in the portfolio GA4 property under Admin → Data collection and modification → Data collection. Reports contain aggregated information for eligible consenting users; low traffic may be withheld by Google’s privacy thresholds. Location and language reporting are also available. Never send contact form content or personal identifiers to Analytics.
+
+Verify production using GTM Preview / Tag Assistant, then check GA4 Realtime and Reports → User attributes → Demographic details. Before consent or after rejecting, no Google measurement script should load. After opting in, the Google tag should fire once. In Tag Assistant, verify the four consent flags for both opt-in options. Other GTM tags added later must respect these choices as well.
 
 ## 📝 Customizing Content
 
@@ -440,7 +452,7 @@ While this is a personal portfolio, feel free to:
 
 **Riyank Mukhopadhyay**
 - Email: rmukhop3@asu.edu
-- GitHub: [@rmukhop3](https://github.com/rmukhop3)
+- GitHub: [@Riyank7](https://github.com/Riyank7)
 - LinkedIn: [riyankmukhopadhyay](https://linkedin.com/in/riyankmukhopadhyay)
 
 ## 📄 License

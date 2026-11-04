@@ -7,7 +7,7 @@ import GradientMesh from '../GradientMesh'
 import { useTheme } from '../ThemeProvider'
 
 // GitHub username from resume data
-const GITHUB_USERNAME = 'rmukhop3'
+const GITHUB_USERNAME = 'Riyank7'
 
 // Stats - update these periodically or fetch from GitHub API
 const stats = [

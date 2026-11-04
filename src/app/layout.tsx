@@ -4,10 +4,12 @@ import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import CustomCursor from '@/components/CustomCursor'
 import ScrollProgress from '@/components/ScrollProgress'
+import Analytics from '@/components/Analytics'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://riyank7.github.io'),
   title: 'Riyank Mukhopadhyay - Machine Learning Engineer',
   description: 'Machine Learning Engineer specializing in Generative AI, Computer Vision & Cloud Infrastructure. Building scalable AI systems at Arizona State University.',
   keywords: ['Machine Learning', 'AI', 'Computer Vision', 'Generative AI', 'AWS', 'Python', 'RAG'],
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://rmukhop3.github.io',
+    url: 'https://riyank7.github.io',
     title: 'Riyank Mukhopadhyay - Machine Learning Engineer',
     description: 'Machine Learning Engineer specializing in Generative AI, Computer Vision & Cloud Infrastructure',
     siteName: 'Riyank Mukhopadhyay Portfolio',
@@ -43,10 +45,10 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Riyank Mukhopadhyay',
               jobTitle: 'Machine Learning Engineer',
-              url: 'https://rmukhop3.github.io',
+              url: 'https://riyank7.github.io',
               sameAs: [
                 'https://linkedin.com/in/riyankmukhopadhyay',
-                'https://github.com/rmukhop3',
+                'https://github.com/Riyank7',
               ],
               worksFor: {
                 '@type': 'Organization',
@@ -61,6 +63,7 @@ export default function RootLayout({
           <CustomCursor />
           <ScrollProgress />
           {children}
+          <Analytics containerId={process.env.NEXT_PUBLIC_GTM_ID} />
         </ThemeProvider>
       </body>
     </html>
