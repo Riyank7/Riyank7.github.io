@@ -329,7 +329,7 @@ vercel --prod
 - **Full Docs**: See [README.md](README.md)
 
 ### Contact
-- **Email**: rmukhop3@asu.edu
+- **Email**: riyank.deep@gmail.com
 - **GitHub**: [@rmukhop3](https://github.com/rmukhop3)
 
 ---

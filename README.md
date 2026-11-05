@@ -451,7 +451,7 @@ While this is a personal portfolio, feel free to:
 ## 📧 Contact
 
 **Riyank Mukhopadhyay**
-- Email: rmukhop3@asu.edu
+- Email: riyank.deep@gmail.com
 - GitHub: [@Riyank7](https://github.com/Riyank7)
 - LinkedIn: [riyankmukhopadhyay](https://linkedin.com/in/riyankmukhopadhyay)
 
