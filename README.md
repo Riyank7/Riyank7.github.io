@@ -102,6 +102,10 @@ For age, gender and interests, enable Google Signals in the portfolio GA4 proper
 
 Verify production using GTM Preview / Tag Assistant, then check GA4 Realtime and Reports → User attributes → Demographic details. Before consent or after rejecting, no Google measurement script should load. After opting in, the Google tag should fire once. In Tag Assistant, verify the four consent flags for both opt-in options. Other GTM tags added later must respect these choices as well.
 
+## GitHub contribution calendars
+
+The GitHub Activity section shows separate calendars for `Riyank7` and `rmukhop3`, with a link to each profile. Update `githubAccounts` in `src/components/sections/GitHubStats.tsx` to change the accounts. The calendars use the existing [GitHub Chart API](https://github.com/2016rshah/githubchart-api) image service and reflect activity visible on each profile. They require no API token. If an image cannot load, the section offers a direct GitHub link. Contribution histories are displayed separately and do not merge GitHub account attribution.
+
 ## 📝 Customizing Content
 
 ### Update Your Resume Data
